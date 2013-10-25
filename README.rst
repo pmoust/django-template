@@ -22,11 +22,11 @@ Usage
    ``fataoulas.gr``. Install the dependencies and create the database (sqlite by
    default)::
 
-   cd fataoulas
-   pip install requirements/local.txt
-   cd root
-   python manage.py syncdb
-   python manage.py migrate
+    cd fataoulas
+    pip install requirements/local.txt
+    cd root
+    python manage.py syncdb
+    python manage.py migrate
 
 #. Open a new terminal and create an email server::
 
@@ -34,7 +34,7 @@ Usage
 
 #. Run Django's test server::
 
-   python manage.py runserver
+    python manage.py runserver
 
 #. Enjoy!
 
