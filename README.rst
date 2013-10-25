@@ -12,7 +12,8 @@ Usage
 
     pip install -e git+https://github.com/audreyr/cookiecutter.git@436390901f36dc3087ad12eff395b9396edc451f#egg=cookiecutter-master
 
-#. Use cookiecutter and the cookiecutter-template to create a new django site::
+#. Use cookiecutter and the cookiecutter-template of this repo to create a new
+   django site::
 
     cookiecutter https://github.com/pmav99/django-template.git
 
@@ -23,7 +24,7 @@ Usage
    default)::
 
     cd fataoulas
-    pip install requirements/local.txt
+    pip install -r requirements/local.txt
     cd root
     python manage.py syncdb
     python manage.py migrate
