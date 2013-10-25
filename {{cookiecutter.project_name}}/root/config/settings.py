@@ -222,6 +222,14 @@ class Common(Configuration):
     WSGI_APPLICATION = 'config.wsgi.application'
     ########## End URL Configuration
 
+    ########## EMAIL
+    DEFAULT_FROM_EMAIL = values.Value(
+            '{{cookiecutter.project_name}} <{{cookiecutter.project_name}}-noreply@{{cookiecutter.domain_name}}>')
+    EMAIL_HOST = 'localhost'
+    EMAIL_PORT = values.IntegerValue(1025)
+    #SERVER_EMAIL = EMAIL_HOST_USER
+    ########## END EMAIL
+
     ########## AUTHENTICATION CONFIGURATION
     AUTHENTICATION_BACKENDS = (
         "django.contrib.auth.backends.ModelBackend",
